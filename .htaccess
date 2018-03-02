@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.rupal.su/$ [NC]
+RewriteRule ^(.*)$ http://rupal.su/$1 [R=301,L]
+php_value max_execution_time 500
+php_value max_input_time 500
+php_value upload_max_filesize 30M
+php_value post_max_size 30M
